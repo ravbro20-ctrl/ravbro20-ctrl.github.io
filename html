@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой проект - 9 класс</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Фейковая загрузка -->
+    <div id="loader">
+        <div class="loader-inner">
+            <div class="loader-emoji">&#10022;</div>
+            <div class="loader-bar">
+                <div class="loader-fill" id="loaderFill"></div>
+            </div>
+            <div class="loader-text"><span id="loaderPercent">0</span>%</div>
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <h1>Мой учебный проект</h1>
+            <p>9 класс</p>
+            <nav>
+                <a href="#about">О проекте</a>
+                <a href="#contact">Контакт</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Добро пожаловать!</h2>
+            <p>Этот сайт создан для учебного проекта по информатике.</p>
+            <a href="#about" class="btn">Узнать больше</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>О проекте</h2>
+            <p class="about-hint">Нажми на карточку, чтобы раскрыть подробности</p>
+            <div class="cards" id="aboutCards">
+                <div class="card clickable" title="Нажми, чтобы раскрыть">
+                    <h3>Цель</h3>
+                    <p>Изучить основы веб-разработки и создать собственный сайт с нуля.</p>
+                    <div class="card-details">
+                        <ul>
+                            <li>Освоить основы HTML и CSS</li>
+                            <li>Научиться верстать страницы вручную</li>
+                            <li>Разобраться с дизайном и оформлением</li>
+                            <li>Успешно сдать итоговый проект по информатике</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card clickable" title="Нажми, чтобы раскрыть">
+                    <h3>Задачи</h3>
+                    <p>Освоить HTML и CSS, научиться верстать страницы и оформлять контент.</p>
+                    <div class="card-details">
+                        <ul>
+                            <li>Изучить структуру HTML-документа</li>
+                            <li>Освоить стилизацию элементов через CSS</li>
+                            <li>Добавить интерактив с помощью JavaScript</li>
+                            <li>Проверить работу сайта на разных экранах</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card clickable" title="Нажми, чтобы раскрыть">
+                    <h3>Инструменты</h3>
+                    <p>Для создания сайта использовались текстовый редактор и веб-браузер.</p>
+                    <div class="card-details">
+                        <ul>
+                            <li>Текстовый редактор для написания кода</li>
+                            <li>Браузер для проверки результатов</li>
+                            <li>HTML и CSS для разметки и стилей</li>
+                            <li>JavaScript для анимаций и интерактива</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="topics">
+        <div class="container">
+            <h2>Изученные темы</h2>
+            <div class="topics-grid">
+                <div class="topic">
+                    <h3>HTML</h3>
+                    <p>Структура страниц, теги, формы, таблицы и списки.</p>
+                </div>
+                <div class="topic">
+                    <h3>CSS</h3>
+                    <p>Стилизация элементов, адаптивный дизайн.</p>
+                </div>
+                <div class="topic">
+                    <h3>Проектирование</h3>
+                    <p>Создание макета, выбор цветовой схемы и шрифтов.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Контакт</h2>
+            <div class="contact-info">
+                <p><strong>Ученик:</strong> Федоренко Тимофей</p>
+                <p><strong>Класс:</strong> 9 "А"</p>
+                <div class="socials">
+                    <a href="https://discordapp.com/users/1266960446871834675" class="social-link" title="Discord">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+                    </a>
+                    <a href="https://t.me/asaspaass" class="social-link" title="Telegram">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Мой учебный проект. 9 класс.</p>
+            <p class="site-stats">
+                <span class="stat" title="Сколько раз открывали этот сайт">&#128202; Открытий сайта: <b id="visitCount">1</b></span>
+                <span class="stat line-stat" title="Общее количество строк кода этого сайта">&#129302; Строк кода: <b id="lineCount">—</b></span>
+            </p>
+        </div>
+    </footer>
+
+    <button class="theme-toggle" id="themeToggle" title="Сменить тему">&#9790;</button>
+
+    <!-- Кнопка «Наверх» -->
+    <button id="toTop" title="Наверх" aria-label="Наверх">&#8593;</button>
+
+    <script>
+        // ===== Фейковая загрузка =====
+        const loader = document.getElementById('loader');
+        const loaderFill = document.getElementById('loaderFill');
+        const loaderPercent = document.getElementById('loaderPercent');
+        let loaderProgress = 0;
+        const loaderTick = setInterval(() => {
+            loaderProgress += Math.random() * 18 + 4;
+            if (loaderProgress >= 100) {
+                loaderProgress = 100;
+                clearInterval(loaderTick);
+                loaderFill.style.width = '100%';
+                loaderPercent.textContent = '100';
+                // мгновенно в самый верх, даже если пользователь листал во время загрузки
+                window.scrollTo(0, 0);
+                setTimeout(() => {
+                    loader.classList.add('hide');
+                    setTimeout(() => loader.remove(), 700);
+                }, 350);
+            } else {
+                loaderFill.style.width = loaderProgress + '%';
+                loaderPercent.textContent = Math.floor(loaderProgress);
+            }
+        }, 200);
+
+        const toggle = document.getElementById('themeToggle');
+        toggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark');
+            const isDark = document.body.classList.contains('dark');
+            toggle.innerHTML = isDark ? '&#9728;' : '&#9790;';
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        });
+
+        if (localStorage.getItem('theme') === 'dark') {
+            document.body.classList.add('dark');
+            toggle.innerHTML = '&#9728;';
+        }
+
+        // ===== Кнопка «Наверх» =====
+        const toTopBtn = document.getElementById('toTop');
+        window.addEventListener('scroll', () => {
+            toTopBtn.classList.toggle('show', window.scrollY > 300);
+        });
+        toTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // ===== Счётчик открытий сайта (хранится в браузере) =====
+        const visits = (parseInt(localStorage.getItem('siteVisits') || '0', 10) + 1);
+        localStorage.setItem('siteVisits', String(visits));
+        document.getElementById('visitCount').textContent = visits;
+
+        // ===== Количество строк кода =====
+        // строки HTML считаются автоматически, CSS посчитан отдельно
+        const htmlLines = document.documentElement.outerHTML.split('\n').length;
+        const cssLines = 740; // style.css
+        document.getElementById('lineCount').textContent = htmlLines + cssLines;
+
+        const aboutCards = document.querySelectorAll('#about .card.clickable');
+        const aboutContainer = document.getElementById('aboutCards');
+
+        // плавно раскрываем текст внутри карточки (высота + прозрачность)
+        function revealDetails(card) {
+            const details = card.querySelector('.card-details');
+            details.style.display = 'block';
+            details.style.maxHeight = '0px';
+            details.style.opacity = '0';
+            void details.offsetWidth;
+            details.style.transition = 'max-height 0.6s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.5s ease';
+            details.style.maxHeight = details.scrollHeight + 'px';
+            details.style.opacity = '1';
+            setTimeout(() => {
+                details.style.maxHeight = 'none';
+                details.style.transition = '';
+                details.style.opacity = '';
+            }, 700);
+        }
+
+        // плавно сворачиваем текст внутри карточки
+        function hideDetails(card) {
+            const details = card.querySelector('.card-details');
+            // переводим высоту в пиксели, чтобы max-height могла плавно анимироваться
+            details.style.transition = 'none';
+            details.style.maxHeight = details.scrollHeight + 'px';
+            details.style.opacity = '1';
+            void details.offsetWidth;
+            details.style.transition = 'max-height 0.4s ease, opacity 0.4s ease';
+            details.style.maxHeight = '0px';
+            details.style.opacity = '0';
+            setTimeout(() => {
+                details.style.display = 'none';
+                details.style.maxHeight = '';
+                details.style.opacity = '';
+                details.style.transition = '';
+            }, 420);
+        }
+
+        function flipCard(card, open, then) {
+            const first = card.getBoundingClientRect();
+
+            if (open) {
+                // прячем текст до конца полёта, чтобы он не появлялся мгновенно
+                const details = card.querySelector('.card-details');
+                details.style.transition = 'none';
+                details.style.display = 'none';
+                details.style.maxHeight = '';
+                details.style.opacity = '';
+                aboutContainer.classList.add('has-active');
+                card.classList.add('active');
+                card.title = 'Нажми повторно, чтобы скрыть';
+            } else {
+                aboutContainer.classList.remove('has-active');
+                card.classList.remove('active');
+                card.title = 'Нажми, чтобы раскрыть';
+
+                // остальные карточки плавно возвращаются на места
+                aboutCards.forEach((s) => {
+                    if (s === card || s.classList.contains('active')) return;
+                    s.classList.remove('reappear');
+                    void s.offsetWidth;
+                    s.classList.add('reappear');
+                    setTimeout(() => s.classList.remove('reappear'), 550);
+                });
+            }
+
+            const last = card.getBoundingClientRect();
+            const dx = first.left - last.left;
+            const dy = first.top - last.top;
+            const sx = first.width / last.width;
+            const sy = first.height / last.height;
+
+            card.style.transition = 'none';
+            card.style.transformOrigin = 'top left';
+            card.style.transform = 'translate(' + dx + 'px, ' + dy + 'px) scale(' + sx + ', ' + sy + ')';
+            void card.offsetWidth; // принудительный reflow
+
+            card.style.transition = 'transform 0.55s cubic-bezier(0.22, 1, 0.36, 1)';
+            card.style.transform = '';
+            setTimeout(() => {
+                card.style.transition = '';
+                card.style.transform = '';
+                if (then) then();
+            }, 580);
+        }
+
+        aboutCards.forEach((card) => {
+            card.addEventListener('click', () => {
+                const isOpen = card.classList.contains('active');
+
+                // закрываем остальные открытые карточки
+                aboutCards.forEach((c) => {
+                    if (c !== card && c.classList.contains('active')) {
+                        hideDetails(c);
+                        setTimeout(() => flipCard(c, false), 420);
+                    }
+                });
+
+                // сворачиваем или разворачиваем нажатую
+                if (isOpen) {
+                    hideDetails(card);
+                    setTimeout(() => flipCard(card, false), 420);
+                } else {
+                    // сначала карточка летит в угол, потом текст плавно опускается
+                    flipCard(card, true, () => revealDetails(card));
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
